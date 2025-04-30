@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+body {
+  background: linear-gradient(#ECEFFE,#ced6fb);
+}
+
+.tabs {
+  display: flex;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+.tabs label {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+}
+/* При активному табі — підкреслення */
+#tab-women:checked ~ .tabs label[for="tab-women"],
+#tab-men:checked ~ .tabs label[for="tab-men"] {
+  border-color: black;
+}
+.carousel {
+  display: none;
+  text-align: center;
+}
+#tab-women:checked ~ #carousel-women,
+#tab-men:checked ~ #carousel-men {
+  display: block;
+}
+input[type="radio"] {
+  display: none;
+}
+ 
+.wen{
+  color: rgb(79, 173, 79);
+}
+  .new {
+    font-family: "Inter", sans-serif;
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+    .cropp {
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+
+  .o {
+    display: inline-block;
+    transform: rotate(45deg);
+  }
+
+  .search-container {
+    position: absolute;
+    top: 20px;
+    right: 220px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .search-container img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    width: 200px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+  }
+
+  .top-links {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .top-links a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 80px; /* опускаємо трохи нижче логотипу */
+    margin-bottom: 40px; /* створюємо відстань перед h1 Новинки */
+  }
+
+  .menu {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .menu-item {
+    margin-top: 0px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 200px;
+  }
+
+  .submenu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+
+  .menu-item:hover .submenu {
+    display: block;
+  }
+
+  .footer-sections-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-section a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .footer-social ul {
+    display: flex;
+    gap: 15px;
+  }
+  .tody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; ← прибрати або змінити */
+    padding-top: 10px; /* додайте при потребі */
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 35px; /* було: margin: 0 60px 35px; */
+  padding: 20px 10px;
+}
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    width: 250px;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor:grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #5372F0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
+
+.qwe{
+  background-color: rgb(234, 234, 234);
+  display: grid;
+  place-content: center;
+}
