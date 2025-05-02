@@ -121,6 +121,7 @@ input[type="radio"] {
   }
 
   .menu-item {
+    position: relative;
     margin-top: 0px;
   }
 
@@ -135,7 +136,7 @@ input[type="radio"] {
     position: absolute;
     top: 20px;
     left: 0;
-    background: white;
+    background:linear-gradient(white,skyblue );
     border: 1px solid #ccc;
     padding: 10px;
     min-width: 200px;
