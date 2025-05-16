@@ -6,9 +6,11 @@ body {
 
 .tabs {
   display: flex;
-  margin-left: 8px;
+  justify-content: center; /* центрує вкладки горизонтально */
   margin-bottom: 20px;
+  gap: 20px; /* відступ між "ЖІНКИ" та "ЧОЛОВІКИ" */
 }
+
 .tabs label {
   padding: 10px 20px;
   cursor: pointer;
@@ -35,11 +37,12 @@ input[type="radio"] {
 .wen{
   color: rgb(79, 173, 79);
 }
-  .new {
-    font-family: "Inter", sans-serif;
-    margin-left: 8px;
-    margin-top: 20px;
-  }
+
+.new {
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
 
 * {
     margin: 0;
@@ -64,8 +67,8 @@ input[type="radio"] {
 
   .search-container {
     position: absolute;
-    top: 20px;
-    right: 220px;
+    top: 50px;
+    right: 200px;
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -74,17 +77,17 @@ input[type="radio"] {
   }
 
   .search-container img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
 
   .search-input {
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     background: transparent;
-    width: 200px;
+    width: 100px;
     padding: 5px;
     border-bottom: 2px solid black;
   }
@@ -99,6 +102,8 @@ input[type="radio"] {
   }
 
   .top-links a {
+    position: relative;
+    top: 25px; /* або padding-bottom / margin-bottom у попереднього елементу */
     text-decoration: none;
     color: #000;
   }
@@ -109,7 +114,7 @@ input[type="radio"] {
     align-items: center;
     gap: 20px;
     text-align: center;
-    margin-top: 80px; /* опускаємо трохи нижче логотипу */
+    margin-top: 150px; /* опускаємо трохи нижче логотипу */
     margin-bottom: 40px; /* створюємо відстань перед h1 Новинки */
   }
 
@@ -284,7 +289,6 @@ input[type="radio"] {
         display: none;
     }
 }
-
 
 .qwe{
   background-color: rgb(234, 234, 234);
