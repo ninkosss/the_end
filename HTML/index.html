@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Cropp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+
+    
 </head>
 <body>
+    <header style="position: relative; z-index: 1000;">
     <div class="cropp">CR<span class="o">O</span>PP</div>
     <div class="search-container">
         <img src="https://img.icons8.com/ios-filled/50/search.png" alt="Пошук" />
@@ -21,11 +25,11 @@
         <a href="#">Корзина</a> 
     </div>
 
-    <header style="position: relative; z-index: 1000;">
     <nav class="menu">
     <div class="menu-item">
       <a href="#">МІЖСЕЗОННИЙ РОЗПРОДАЖ</a>
       <div class="submenu">
+        <div class="column">
         <strong>ОДЯГ ДЛЯ НЕЇ</strong>
         <a href="#">Побачити все</a>
         <a href="#">Піджаки</a>
@@ -37,10 +41,13 @@
         <a href="#">Светри</a>
         <a href="#">Сорочки, блузки</a>
         <a href="#">Сукні, комбінезон</a>
-        <hr /> ?
+        
+        </div>
+        <div class="column">
         <strong>АКСЕСУАРИ ДЛЯ НЕЇ</strong>
         <a href="#">Побачити все</a>
-        <hr />
+        </div>
+        <div class="column">
         <strong>ОДЯГ ДЛЯ НЬОГО</strong>
         <a href="#">Побачити все</a>
         <a href="#">Піджаки</a>
@@ -50,144 +57,163 @@
         <a href="#">Baggy</a>
         <a href="#">Футболки</a>
         <a href="#">Сорочки</a>
-        <hr />
+        </div>
+        <div class="column">
         <strong>АКСЕСУАРИ ДЛЯ НЬОГО</strong>
         <a href="#">Побачити все</a>
+        </div>
       </div>
     </div>
 
 <div class="menu-item">
   <a href="#">ЖІНКАМ</a>
   <div class="submenu">
+    <div class="column">
     <strong>ОДЯГ</strong>
-    <a href="">CowGirl</a>
-    <a href="">Brown&Beige</a>
-    <a href="">Новинки</a>
-    <a href="">Скоро у продажі</a>
-    <a href="">Футболки, на бретельках</a>
-    <a href="">Світшоти</a>
-    <a href="">Джинси</a>
-    <a href="">Куртки, пальта</a>
-    <a href="">Імітація замші</a>
-    <a href="">Штани</a>
-    <a href="">Сукні</a>
-    <a href="">Шорти, бермуди</a>
-    <a href="">Сорочки, блузки</a>
-    <a href="">Спідниці</a>
-    <a href="">Светри</a>
-    <a href="">Basic</a>
-    <a href="">Набори</a>
+    <a href="#">CowGirl</a>
+    <a href="#">Brown&Beige</a>
+    <a href="#">Новинки</a>
+    <a href="#">Скоро у продажі</a>
+    <a href="#">Футболки, на бретельках</a>
+    <a href="#">Світшоти</a>
+    <a href="#">Джинси</a>
+    <a href="#">Куртки, пальта</a>
+    <a href="#">Імітація замші</a>
+    <a href="#">Штани</a>
+    <a href="#">Сукні</a>
+    <a href="#">Шорти, бермуди</a>
+    <a href="#">Сорочки, блузки</a>
+    <a href="#">Спідниці</a>
+    <a href="#">Светри</a>
+    <a href="#">Basic</a>
+    <a href="#">Набори</a>
+    </div>
 
+    <div class="column">
     <strong>ВЗУТТЯ</strong>
-    <a href="">Побачити все</a>
-    <a href="">Кросівки</a>
-    <a href="">Кеди</a>
-    <a href="">Взуття, Еспадрільї</a>
-    <a href="">Ботильйони, Черевики</a>
-    <a href="">В'єтнамки, сандалі</a>
-    <a href="">Аксесуари</a>
+    <a href="#">Побачити все</a>
+    <a href="#">Кросівки</a>
+    <a href="#">Кеди</a>
+    <a href="#">Взуття, Еспадрільї</a>
+    <a href="#">Ботильйони, Черевики</a>
+    <a href="#">В'єтнамки, сандалі</a>
+    <a href="#">Аксесуари</a>
+    </div>
 
+    <div class="column">
     <strong>АКСЕСУАРИ</strong>
-    <a href="">Побачити все</a>
-    <a href="">Сумки, Рюкзаки</a>
-    <a href="">Піжами, Капці</a>
-    <a href="">Шкарпетки, колготки</a>
-    <a href="">Жіноча білизна</a>
-    <a href="">Купальники</a>
-    <a href="">В'єтнамки, сандалі</a>
-    <a href="">Шапки</a>
-    <a href="">Сонцезахисні окуляри</a>
-    <a href="">Ремні</a>
-    <a href="">Гаманці</a>
-    <a href="">Біжутерія</a>
-    <a href="">Аксесуари</a>
+    <a href="#">Побачити все</a>
+    <a href="#">Сумки, Рюкзаки</a>
+    <a href="#">Піжами, Капці</a>
+    <a href="#">Шкарпетки, колготки</a>
+    <a href="#">Жіноча білизна</a>
+    <a href="#">Купальники</a>
+    <a href="#">В'єтнамки, сандалі</a>
+    <a href="#">Шапки</a>
+    <a href="#">Сонцезахисні окуляри</a>
+    <a href="#">Ремні</a>
+    <a href="#">Гаманці</a>
+    <a href="#">Біжутерія</a>
+    <a href="#">Аксесуари</a>
+    </div>
 
+    <div class="column">
     <strong>LICENZA</strong>
-    <a href="">Побачити все</a>
-    <a href="">Cartoons</a>
-    <a href="">Hello Kitty</a>
-    <a href="">Gamer</a>
-    <a href="">Music</a>
-    <a href="">Disney</a>
-    <a href="">Pokemon</a>
+    <a href="#">Побачити все</a>
+    <a href="#">Cartoons</a>
+    <a href="#">Hello Kitty</a>
+    <a href="#">Gamer</a>
+    <a href="#">Music</a>
+    <a href="#">Disney</a>
+    <a href="#">Pokemon</a>
+    </div>
   </div>
 </div>
 
 <div class="menu-item">
   <a href="#">ЧОЛОВІКАМ</a>
   <div class="submenu">
+    <div class="column">
     <strong>ОДЯГ</strong>
-    <a href="">Blue&Grey</a>
-    <a href="">Новинки</a>
-    <a href="">Скоро у продажі</a>
-    <a href="">Basic</a>
-    <a href="">Футболки</a>
-    <a href="">Шорти, бермуди</a>
-    <a href="">Джинсові шорти</a>
-    <a href="">Поло</a>
-    <a href="">Сорочки</a>
-    <a href="">Світшоти</a>
-    <a href="">Джинси</a>
-    <a href="">Baggy</a>        
-    <a href="">Куртки, пальта</a>
-    <a href="">Штани</a>
-    <a href="">Набори</a>
+    <a href="#">Blue&Grey</a>
+    <a href="#">Новинки</a>
+    <a href="#">Скоро у продажі</a>
+    <a href="#">Basic</a>
+    <a href="#">Футболки</a>
+    <a href="#">Шорти, бермуди</a>
+    <a href="#">Джинсові шорти</a>
+    <a href="#">Поло</a>
+    <a href="#">Сорочки</a>
+    <a href="#">Світшоти</a>
+    <a href="#">Джинси</a>
+    <a href="#">Baggy</a>        
+    <a href="#">Куртки, пальта</a>
+    <a href="#">Штани</a>
+    <a href="#">Набори</a>
+    </div>
+    <div class="column">
     <strong>ВЗУТТЯ</strong>
-    <a href="">Побачити все</a>
-    <a href="">Кеди</a>
-    <a href="">Кросівки</a>
-    <a href="">Шкіра</a>
-    <a href="">Вʼєтнамки</a>
+    <a href="#">Побачити все</a>
+    <a href="#">Кеди</a>
+    <a href="#">Кросівки</a>
+    <a href="#">Шкіра</a>
+    <a href="#">Вʼєтнамки</a>
+    </div>
+    <div class="column">
     <strong>АКСЕСУАРИ</strong>
-    <a href="">Побачити все</a>
-    <a href="">Basic</a>
-    <a href="">Боксери</a>
-    <a href="">Шкарпетки</a>
-    <a href="">Шорти</a>
-    <a href="">Шорти</a>
-    <a href="">Вʼєтнамки</a>
-    <a href="">Сонцезахисні окуляри</a>
-    <a href="">Шапки</a>
-    <a href="">Біжутерія</a>
-    <a href="">Аксесуари</a>
-    <a href="">Homewear</a>
-    <a href="">Сумка, рюкзаки</a>
-    <a href="">Ремні</a>
-    <a href="">Гаманці</a>
-    <a href=""></a>
+    <a href="#">Побачити все</a>
+    <a href="#">Basic</a>
+    <a href="#">Боксери</a>
+    <a href="#">Шкарпетки</a>
+    <a href="#">Шорти</a>
+    <a href="#">Вʼєтнамки</a>
+    <a href="#">Сонцезахисні окуляри</a>
+    <a href="#">Шапки</a>
+    <a href="#">Біжутерія</a>
+    <a href="#">Аксесуари</a>
+    <a href="#">Homewear</a>
+    <a href="#">Сумка, рюкзаки</a>
+    <a href="#">Ремні</a>
+    <a href="#">Гаманці</a>
+    <a href="#"></a>
+    </div>
+    <div class="column">
     <strong>LICENZA</strong>
-    <a href="">Побачити все</a>
-    <a href="">Music</a>
-    <a href="">Gamer</a>
-    <a href="">Anime</a>
-    <a href="">TV & Movies</a>
-    <a href="">Rick and Morty</a>
-    <a href="">Pokemon</a>
-    <a href="">Cartoons</a>
+    <a href="#">Побачити все</a>
+    <a href="#">Music</a>
+    <a href="#">Gamer</a>
+    <a href="#">Anime</a>
+    <a href="#">TV & Movies</a>
+    <a href="#">Rick and Morty</a>
+    <a href="#">Pokemon</a>
+    <a href="#">Cartoons</a>
+    </div>
   </div>
 </div>
 
 <div class="menu-item">
   <a href="#">DENIM</a>
   <div class="submenu">
-    <strong>ДЖИНСИ ДЛЯ НЕЇ</strong>
-    <strong>ДЖИНСИ ДЛЯ НЬОГО</strong>
-    <strong>DENIM OUTFITS ДЛЯ НЕЇ</strong>
-    <strong>DENIM OUTFITS ДЛЯ НЬОГО</strong>
+    <div class="column"><strong>ДЖИНСИ ДЛЯ НЕЇ</strong></div>
+    <div class="column"><strong>ДЖИНСИ ДЛЯ НЬОГО</strong></div>
+    <div class="column"><strong>DENIM OUTFITS ДЛЯ НЕЇ</strong></div>
+    <div class="column"><strong>DENIM OUTFITS ДЛЯ НЬОГО</strong></div>
   </div>
 </div>
 
 <div class="menu-item">
 <a href="#">HOT RN</a>
   <div class="submenu">
-    <strong>Новинки для неї</strong>
-    <strong>Новинки для нього</strong>
-    <strong>Billie Eilish</strong>
-    <strong>Boredom Breakers</strong>
+    <div class="column"><strong>Новинки для неї</strong></div>
+    <div class="column"><strong>Новинки для нього</strong></div>
+    <div class="column"><strong>Billie Eilish</strong></div>
+    <div class="column"><strong>Boredom Breakers</strong></div>
+    </div>
   </div>
 </div>
 </nav>
-    </header>
+</header>
+    <main>
     <h1 class="new">Новинки</h1>
     <input type="radio" name="carousel" id="tab-women" checked>
     <input type="radio" name="carousel" id="tab-men">
@@ -203,7 +229,7 @@
                 <ul class="card-list swiper-wrapper">
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/dress.png" alt="Dress" class="card-image">
+                            <img src="../images/dress.png" alt="Dress" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Гладка сукня міні</h2>
                             <h4 class="card-title">1095 UAH</h4>
@@ -213,7 +239,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/midiskirt.png" alt="Midiskirt" class="card-image">
+                            <img src="../images/midiskirt.png" alt="Midiskirt" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Мідіспідниця</h2>
                             <h4 class="card-title">799 UAH</h4>
@@ -223,7 +249,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/bag.png" alt="Bag" class="card-image">
+                            <img src="../images/bag.png" alt="Bag" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Лакована сумка через плече</h2>
                             <h4 class="card-title">899 UAH</h4>
@@ -233,7 +259,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/tshirt.png" alt="T-shirt" class="card-image">
+                            <img src="../images/tshirt.png" alt="T-shirt" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Майка</h2>
                             <h4 class="card-title">349 UAH</h4>
@@ -243,7 +269,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/top.png" alt="Top" class="card-image">
+                            <img src="../images/top.png" alt="Top" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Топ у дрібну клітинку</h2>
                             <h4 class="card-title">999 UAH</h4>
@@ -268,7 +294,7 @@
                 <ul class="card-list swiper-wrapper">
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/mensblouse.png" alt="Men`s blouse" class="card-image">
+                            <img src="../images/mensblouse.png" alt="Men`s blouse" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Сорочка з принтом</h2>
                             <h4 class="card-title">999 UAH</h4>
@@ -278,7 +304,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/mensjacket.png" alt="Men`s jacket" class="card-image">
+                            <img src="../images/mensjacket.png" alt="Men`s jacket" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Худі</h2>
                             <h4 class="card-title">1599 UAH</h4>
@@ -288,7 +314,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/mensjumpsuit.png" alt="Men`s jumpsuit" class="card-image">
+                            <img src="../images/mensjumpsuit.png" alt="Men`s jumpsuit" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Джинсовий комбінезон</h2>
                             <h4 class="card-title">1899 UAH</h4>
@@ -298,7 +324,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/menstshirt.png" alt="T-shirt" class="card-image">
+                            <img src="../images/menstshirt.png" alt="T-shirt" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Футболка з принтом</h2>
                             <h4 class="card-title">699 UAH</h4>
@@ -308,7 +334,7 @@
                     </li>
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
-                            <img src="images/mensshort.png" alt="Men`s shorts" class="card-image">
+                            <img src="../images/mensshort.png" alt="Men`s shorts" class="card-image">
                             <p class="badge">-25%</p>
                             <h2 class="card-title">Спортивні шорти</h2>
                             <h4 class="card-title">799 UAH</h4>
@@ -334,7 +360,7 @@
             <ul class="card-list swiper-wrapper">
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="images/hobla.png" alt="Hoodie" class="card-image">
+                        <img src="../images/hobla.png" alt="Hoodie" class="card-image">
                         <h2 class="card-title">Чорне худі з принтом League of Legends</h2>
                         <h4 class="card-title">1599 UAH</h4>
                         <button class="card-button
@@ -343,7 +369,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="images/hoobli.png" alt="Hoodie" class="card-image">
+                        <img src="../images/hoobli.png" alt="Hoodie" class="card-image">
                         <h2 class="card-title">Худі з принтом League of Legends</h2>
                         <h4 class="card-title">1499 UAH</h4>
                         <button class="card-button
@@ -352,7 +378,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="images/thiwhi.png" alt="T-shirt" class="card-image">
+                        <img src="../images/thiwhi.png" alt="T-shirt" class="card-image">
                         <h2 class="card-title">Біла футболка з принтом League of Legends</h2>
                         <h4 class="card-title">1199 UAH</h4>
                         <button class="card-button
@@ -361,7 +387,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="images/tshipi.png" alt="T-shirt" class="card-image">
+                        <img src="../images/tshipi.png" alt="T-shirt" class="card-image">
                         <h2 class="card-title">Футболка з аплікацією League of Legends </h2>
                         <h4 class="card-title">999 UAH</h4>
                         <button class="card-button
@@ -370,7 +396,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="images/whipit.png" alt="T-shirt" class="card-image">
+                        <img src="../images/whipit.png" alt="T-shirt" class="card-image">
                         <h2 class="card-title">Футболка з принтом League of Legends</h2>
                         <h4 class="card-title">1199 UAH</h4>
                         <button class="card-button
@@ -379,7 +405,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                   <a href="#" class="card-link">
-                      <img src="images/hoodie.png" alt="Hoodie" class="card-image">
+                      <img src="../images/hoodie.png" alt="Hoodie" class="card-image">
                       <h2 class="card-title">Худі з принтом League of Legends</h2>
                       <h4 class="card-title">1599 UAH</h4>
                       <button class="card-button
@@ -388,7 +414,7 @@
               </li>
               <li class="card-item swiper-slide">
                 <a href="#" class="card-link">
-                    <img src="images/tsibla.png" alt="T-shirt" class="card-image">
+                    <img src="../images/tsibla.png" alt="T-shirt" class="card-image">
                     <h2 class="card-title">Чорна футболка з принтом League of Legends</h2>
                     <h4 class="card-title">1199 UAH</h4>
                     <button class="card-button
@@ -397,7 +423,7 @@
             </li>
             <li class="card-item swiper-slide">
               <a href="#" class="card-link">
-                  <img src="images/blobla.png" alt="T-shirt" class="card-image">
+                  <img src="../images/blobla.png" alt="T-shirt" class="card-image">
                   <h2 class="card-title">Сорочка з коротким рукавом League of Legends</h2>
                   <h4 class="card-title">1399 UAH</h4>
                   <button class="card-button
@@ -406,7 +432,7 @@
           </li>
           <li class="card-item swiper-slide">
             <a href="#" class="card-link">
-                <img src="images/whitet.png" alt="T-shirt" class="card-image">
+                <img src="../images/whitet.png" alt="T-shirt" class="card-image">
                 <h2 class="card-title">Біла футболка з принтом League of Legends</h2>
                 <h4 class="card-title">999 UAH</h4>
                 <button class="card-button
@@ -415,7 +441,7 @@
         </li>
         <li class="card-item swiper-slide">
           <a href="#" class="card-link">
-              <img src="images/whstw.png" alt="T-shirt" class="card-image">
+              <img src="../images/whstw.png" alt="T-shirt" class="card-image">
               <h2 class="card-title">Футболка з принтом League of Legends</h2>
               <h4 class="card-title">999 UAH</h4>
               <button class="card-button
@@ -431,7 +457,8 @@
         </div>
     </div>
 </div>
-
+</main>
+<footer>
     <div class="footer-sections-row">
         <div class="footer-section">
           <h3 class="wen">Інтернет-магазин</h3>
@@ -485,8 +512,9 @@
           <p>LPP S.A., вул. Лонкова 39/44, 80-769 Гданськ, Польща, NIP: 583‑10‑14‑898, REGON: 190852164</p>
         </div>
       </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../Script/script.js"></script>
 </body>
 </html>

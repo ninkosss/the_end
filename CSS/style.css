@@ -67,8 +67,8 @@ input[type="radio"] {
 
   .search-container {
     position: absolute;
-    top: 50px;
-    right: 200px;
+    top: 20px;
+    right: 210px;
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -94,7 +94,7 @@ input[type="radio"] {
 
   .top-links {
     position: absolute;
-    top: 30px;
+    top: 1px;
     right: 20px;
     font-size: 14px;
     display: flex;
@@ -118,45 +118,6 @@ input[type="radio"] {
     margin-bottom: 40px; /* створюємо відстань перед h1 Новинки */
   }
 
-  .menu {
-    display: flex;
-    margin-top: 20px;
-    gap: 20px;
-    cursor: pointer;
-  }
-
-  .menu-item {
-    position: relative;
-    margin-top: 0px;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-
-  .submenu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    background:linear-gradient(white,skyblue );
-    border: 1px solid #ccc;
-    padding: 10px;
-    min-width: 200px;
-  }
-
-  .submenu a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 5px 0;
-  }
-
-  .menu-item:hover .submenu {
-    display: block;
-  }
 
   .footer-sections-row {
     display: flex;
