@@ -1,0 +1,14 @@
+.cropp {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.o {
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=logo.css.map */
