@@ -12,19 +12,11 @@ new Swiper('.card-wrapper', {
         prevEl: '.swiper-button-prev',
     },
 
-    breakpoints:{
-        0:{
-            slidesPerView: 1
-        },
-        100:{
-            slidesPerView: 2
-        },
-        200:{
-            slidesPerView: 3
-        },
-        300:{
-            slidesPerView: 4
-        },
-    },
-});
+    breakpoints: {
+        576: { slidesPerView: 1 },  // 📱 Телефони
+        768: { slidesPerView: 2 },  // 📱📲 Планшети
+        1024: { slidesPerView: 3 }, // 🖥️ Ноутбуки
+        1200: { slidesPerView: 4 }  // 🖥️ Великі монітори
+    }
+});    
   

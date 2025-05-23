@@ -24,8 +24,8 @@
 .submenu
   display: none // Сховане за замовчуванням
   position: absolute
-  top: 120% // Трохи нижче, щоб уникнути "мертвої зони"
-  left: -360px // Вирівнюємо по лівому краю пункту меню
+  top: 120%
+  left: -360px
   background: whitesmoke
   border: 1px solid #ccc
   padding: 20px
@@ -49,3 +49,37 @@
       color: #333
       padding: 2px 0
       font-weight: normal
+
+// 🔽 АДАПТИВНІСТЬ
+@media (max-width: 820px)
+  header
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .menu
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    margin-top: 40px
+
+  .submenu
+    position: static
+    display: none
+    flex-direction: column
+    background: transparent
+    border: none
+    box-shadow: none
+    padding: 10px
+    gap: 10px
+    width: 100%
+    align-items: center
+
+    .column
+      min-width: auto
+      align-items: center
+      text-align: center
+
+// Опційно: автопоказ на мобілках
+  .menu-item:hover .submenu
+    display: flex

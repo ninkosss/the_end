@@ -1,0 +1,224 @@
+$breakpoint-sm: 600px
+$breakpoint-md: 820px
+$breakpoint-lg: 1100px
+// Змінні
+$font-size-large: 40px
+$font-size-medium: 30px
+$font-size-small: 22px
+$font-weight-bold: bold
+$text-center: center
+
+
+@media (max-width: $breakpoint-sm)
+  .footer-sections-row
+    grid-template-columns: 1fr
+    text-align: center
+
+  .footer-section
+    padding: 10px
+    align-items: center // Центрування flex-елементів
+    text-align: center  // Для inline-елементів
+
+  .footer-social ul
+    grid-template-columns: 1fr
+
+  .menu
+    flex-direction: column
+    align-items: center
+  .submenu
+    position: static
+    flex-direction: column
+    background: none
+    box-shadow: none
+    border: none
+
+  header nav
+    flex-direction: column
+    gap: 10px
+    margin-top: 100px
+    margin-bottom: 20px
+
+@media (max-width: $breakpoint-md)
+  .menu
+    flex-wrap: wrap
+    gap: 10px
+
+  .submenu
+    left: 0
+    top: 100%
+
+  // 📱 Медіа-запит для мобільних пристроїв
+@media only screen and (max-width: 600px)
+  .footer-sections-row
+    grid-template-columns: 1fr
+    text-align: center
+
+  .footer-section
+    padding: 10px
+
+  .footer-social ul
+    grid-template-columns: 1fr
+    text-align: center
+
+  .qwe
+    padding: 10px
+
+@media only screen and (max-width: 600px)
+  .card-wrapper
+    margin: 0 10px 25px
+    display: flex
+
+    .swiper-slide-button
+      display: none
+@media (max-width: $breakpoint-md)
+  .card-wrapper
+    padding: 10px
+    max-width: 100%
+
+  .tabs
+    flex-wrap: wrap
+    gap: 10px
+
+  header nav
+    flex-direction: column
+    margin-top: 80px
+    gap: 10px
+
+  .swiper-slide-button
+    display: none
+
+@media (max-width: $breakpoint-sm)
+  .tody
+    flex-direction: column
+    padding-top: 20px
+    text-align: center
+
+  .tabs
+    flex-direction: column
+    align-items: center
+    gap: 10px
+
+  .card-link
+    width: 100%
+    padding: 12px
+
+  .card-title
+    font-size: 1rem
+    text-align: center
+
+  .badge
+    margin: 10px auto
+
+  .card-button
+    bottom: 5px
+    right: 5px
+
+  .new
+    font-size: 1rem
+    margin-top: 10px
+
+  .carousel
+    padding: 0 10px
+
+// Адаптивність
+@media (max-width: 820px) // Планшети
+  .cropp 
+    font-size: $font-size-medium
+    margin-top: 10px
+
+@media (max-width: 480px) // Телефони
+  .cropp 
+    font-size: $font-size-small
+    margin-top: 20px
+    line-height: 1.2
+
+  .o
+    transform: rotate(45deg) scale(0.9) // Зменшуємо "о" для гармонії на мобілках
+// 🔽 Адаптивність
+@media (max-width: 820px) // Планшети
+  .top-links
+    top: 30px
+    right: 35px
+    font-size: 13px
+    gap: 8px
+
+    a
+      top: 18px
+
+@media (max-width: 480px) // Мобільні телефони
+  .top-links
+    flex-direction: column
+    align-items: flex-end
+    right: 5px
+    top: 10px
+    font-size: 12px
+    gap: 5px
+
+    a
+      top: 0
+
+// ===== Адаптивність =====
+@media (max-width: 820px) // Планшети
+  .search-container 
+    right: 100px
+    font-size: 20px
+
+    img 
+      width: 22px
+      height: 22px
+
+  .search-input 
+    width: 80px
+    font-size: 9px
+
+@media (max-width: 480px) // Телефони
+  .search-container 
+    right: 20px
+    top: 10px
+    flex-direction: column
+    align-items: flex-end
+    font-size: 18px
+
+    img 
+      width: 20px
+      height: 20px
+
+  .search-input 
+    width: 70px
+    font-size: 8px
+    padding: 4px
+
+// 🔽 АДАПТИВНІСТЬ
+@media (max-width: 820px)
+  header
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .menu
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    margin-top: 40px
+
+  .submenu
+    position: static
+    display: none
+    flex-direction: column
+    background: transparent
+    border: none
+    box-shadow: none
+    padding: 10px
+    gap: 10px
+    width: 100%
+    align-items: center
+
+    .column
+      min-width: auto
+      align-items: center
+      text-align: center
+
+// Опційно: автопоказ на мобілках
+  .menu-item:hover .submenu
+    display: flex
+
