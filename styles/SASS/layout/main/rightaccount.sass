@@ -1,12 +1,3 @@
-// Змінні
-$position-absolute: absolute
-$top-main: 1px
-$right-main: 20px
-$font-size-main: 14px
-$gap-size: 10px
-$link-top: 25px
-$link-color: #000
-
 // Базовий стиль
 .top-links 
   position: $position-absolute
@@ -21,28 +12,4 @@ $link-color: #000
     top: $link-top
     text-decoration: none
     color: $link-color
-
-// 🔽 Адаптивність
-@media (max-width: 820px) // Планшети
-  .top-links
-    top: 30px
-    right: 35px
-    font-size: 13px
-    gap: 8px
-
-    a
-      top: 18px
-
-@media (max-width: 480px) // Мобільні телефони
-  .top-links
-    flex-direction: column
-    align-items: flex-end
-    right: 5px
-    top: 10px
-    font-size: 12px
-    gap: 5px
-
-    a
-      top: 0
-
 
